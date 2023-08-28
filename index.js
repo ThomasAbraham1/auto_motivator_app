@@ -15,7 +15,7 @@ app.get("/", (req,res) =>{
 
 res.render("index", {});
 
-cron.schedule('02 18 * * *', () => {
+cron.schedule('07 18 * * *', () => {
     console.log('Running a job at 6:30 at Asia/Kolkata timezone');
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
